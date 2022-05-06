@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .topnav {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(229, 255, 0);
+
+        }
+
+        .topnav a.active {
+            background-color: violet;
+            color: black;
+        }
+
+        .topnav input[type=text] {
+            border: 1px solid;
+            position: absolute;
+            right: 0;
+            height: 6vh;
+        }
+        .container{
+            text-align: center;
+           /* position: absolute;
+            left: 30%;*/
+        }
+        
+       #addbtn{
+           text-align: center;
+           position: absolute;
+          bottom: 0;
+          right: 39%;
+       }
+      
+      
+        
+    </style>
+    <div class="topnav">
+        <a class="active" href="#home">home</a>
+
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <input type="text" id="searchTxt" placeholder="search">
+    </div>
+    <br>
+
+    <div class="container" my-3 >
+        
+        <h1>Welcome to my Notes</h1>
+        <br>
+        <div class="card" style="width: 20rem; height: 12rem;">
+            <h6 class="card title" style="background-color: cadetblue;"> Add a Note </h6>
+            <div class="form group">
+                <textarea class="form control" id="addTxt" rows="3" style="text-align: center; height: 120px; width: 235px;"></textarea>
+            </div>
+
+            <button class="btn btn-primary" id="addbtn" style="width: 6rem;"> Add Note</button>
+        </div>
+        <br>
+        <hr>
+        <h3>Your Notes</h3>
+        <hr>
+        <div id="notes" class="row container-fluid" >
+            <div class="card" >
+                <h5 class="card title">Note</h5>
+                <div class="form group">
+                    <p class="card" id=" addTxt" rows="3" style="width: 30vw; height: 12vh;"></p>
+                </div>
+                <button id="${index} " onclick="deleteNote" class="btn btn-primary" id="deletebtn">Delete Note</button>
+            </div>
+        </div>
+        <script src=" app.js"></script>
+</body>
+
+</html>
